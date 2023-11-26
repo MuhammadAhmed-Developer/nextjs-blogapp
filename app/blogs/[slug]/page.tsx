@@ -1,7 +1,7 @@
+import { blogData } from '@/app/constants/blog-data';
 import React from 'react'
-import { blogData } from '../page'
 
-export default function page({ params }: { params: { slug: string } }) {
+export default function Slug({ params }: { params: { slug: string } }) {
 
     const selectedBlog = blogData.find((blog) => blog.slug === params.slug);
 
