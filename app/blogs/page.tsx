@@ -63,7 +63,7 @@ export default function Blogs() {
         <div>
             {blogData.map((item, i)=>{
                 return(
-                    <Link href={`/blogs/${item.slug}`} className='border-gray-900 flex justify-center'>
+                    <Link key={i} href={`/blogs/${item.slug}`} className='border-gray-900 flex justify-center'>
                         <ul className='text-2xl border  my-4 cursor-pointer'>
                             <li>
                             {i + 1} : {item.title}
